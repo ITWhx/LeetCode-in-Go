@@ -26,7 +26,9 @@ type ans struct {
 
 func Test_Problem0015(t *testing.T) {
 	ast := assert.New(t)
-
+	ints := []int{1, 1, 2}
+	d := removeDuplicates(ints)
+	fmt.Println(d)
 	qs := []question{
 
 		question{

@@ -41,3 +41,17 @@ func threeSumClosest(nums []int, target int) int {
 
 	return res
 }
+
+func removeElement(nums []int, val int) int {
+	l1, res := 0, 0
+	for i, v := range nums {
+		if v == val {
+			continue
+		}
+		nums[l1], nums[i] = nums[i], nums[l1]
+		l1++
+		res = l1
+
+	}
+	return res
+}
