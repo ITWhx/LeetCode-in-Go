@@ -1,6 +1,7 @@
 package problem0007
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -20,8 +21,9 @@ type question struct {
 }
 
 func Test_OK(t *testing.T) {
-	ast := assert.New(t)
 
+	ast := assert.New(t)
+	fmt.Println(-32 % 10)
 	qs := []question{
 		question{
 			p: para{

@@ -55,3 +55,12 @@ func Test_Problem0034(t *testing.T) {
 		ast.Equal(a.one, searchRange(p.one, p.two), "输入:%v", p)
 	}
 }
+
+func TestBSort(t *testing.T) {
+	ints := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	//ints := [] int{1}
+
+	sort := BSort(ints, 10)
+	sort1 := BSort1(ints, 10)
+	fmt.Println(sort, sort1)
+}

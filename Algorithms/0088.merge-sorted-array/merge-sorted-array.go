@@ -30,3 +30,34 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 		}
 	}
 }
+
+func merge1(nums1 []int, m int, nums2 []int, n int) {
+
+	tmp := make([]int, m)
+	copy(tmp, nums1)
+	index, i, j := 0, 0, 0
+
+	for i < m && j < n {
+		if tmp[i] < nums2[j] {
+			nums1[index] = tmp[i]
+			i++
+		} else {
+			nums1[index] = nums2[j]
+			j++
+		}
+		index++
+	}
+
+	for i < m {
+		nums1[index] = tmp[i]
+		index++
+		i++
+	}
+
+	for j < n {
+		nums1[index] = nums2[j]
+		index++
+		j++
+	}
+
+}

@@ -25,7 +25,23 @@ type ans struct {
 	one []int
 }
 
+func add(a *[]int) {
+	*a = append(*a, 2)
+
+}
+func Test1(t *testing.T) {
+	ints := make([]int, 0, 3)
+	fmt.Println(ints)
+	fmt.Printf("1:%p\n", &ints)
+	ints2 := append(ints, 1)
+	fmt.Printf("2:%p\n", &ints2)
+	fmt.Println(ints)
+
+	//fmt.Println("ints:%p",&ints)
+}
 func Test_Problem0019(t *testing.T) {
+	ints := make([]int, 2, 3)
+	add(ints)
 	ast := assert.New(t)
 
 	qs := []question{

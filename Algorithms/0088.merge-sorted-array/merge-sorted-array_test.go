@@ -28,12 +28,13 @@ type ans struct {
 }
 
 func Test_Problem0088(t *testing.T) {
+
 	ast := assert.New(t)
 
 	qs := []question{
 
 		question{
-			para{[]int{0}, 0, []int{1}, 1},
+			para{[]int{4, 5, 6, 0, 0, 0}, 3, []int{1, 2, 3}, 3},
 			ans{[]int{1}},
 		},
 
@@ -64,7 +65,7 @@ func Test_Problem0088(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 
-		merge(p.one, p.m, p.two, p.n)
+		merge1(p.one, p.m, p.two, p.n)
 		ast.Equal(a.one, p.one, "输入:%v", p)
 	}
 }

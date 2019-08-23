@@ -24,3 +24,16 @@ type ListNode struct {
 	Val  int
 	Next *ListNode
 }
+
+func reverseList1(head *ListNode) *ListNode {
+
+	bef, cur := nil, head
+
+	for cur != nil {
+		head = cur
+		cur = cur.Next
+		head.Next = bef
+		bef = head
+	}
+	return head
+}

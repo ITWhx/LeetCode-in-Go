@@ -25,7 +25,14 @@ type ans struct {
 	one [][]int
 }
 
+func ddd(b []int) {
+	b[0] = 1
+	b = append(b, 2)
+}
 func Test_Problem0039(t *testing.T) {
+	b := make([]int, 2, 4)
+	ddd(b)
+	//b=append(b, 3)
 	ast := assert.New(t)
 
 	qs := []question{

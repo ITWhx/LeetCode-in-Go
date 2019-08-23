@@ -41,3 +41,30 @@ func max(a, b int) int {
 	}
 	return b
 }
+
+func merge1(intervals [][]int) [][]int {
+	if len(intervals) <= 1 {
+		return intervals
+	}
+
+	sort.Slice(intervals, func(i, j int) bool {
+		return intervals[i][0] < intervals[j][0]
+	})
+
+	res := make([][]int, 0, len(intervals))
+
+	tmp := intervals[0]
+
+	for i := 1; i < len(intervals); i++ {
+		if tmp[1] >= intervals[i][0] {
+			tmp[1] = max(tmp[1], intervals[i][1])
+			continue
+		}
+		res = append(res, tmp)
+		tmp = intervals[i]
+	}
+
+	res = append(res, tmp)
+
+	return res
+}

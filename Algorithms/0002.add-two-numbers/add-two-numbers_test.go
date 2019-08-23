@@ -1,6 +1,7 @@
 package problem0002
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -40,7 +41,8 @@ func makeListNode(is []int) *ListNode {
 
 func Test_OK(t *testing.T) {
 	ast := assert.New(t)
-
+	substring := lengthOfLongestSubstring("abba")
+	fmt.Println(substring)
 	qs := []question{
 		question{
 			p: para{
@@ -75,4 +77,31 @@ func Test_OK(t *testing.T) {
 		a, p := q.a, q.p
 		ast.Equal(a.one, addTwoNumbers(p.one, p.two), "输入:%v", p)
 	}
+}
+
+func lengthOfLongestSubstring(s string) int {
+	start, maxLen := 0, 0
+
+	table := [256]int{}
+
+	for i, _ := range table {
+		table[i] = -1
+	}
+
+	for i, v := range s {
+		//注意这里是v，不是下标i
+		if table[v] > -1 {
+			start = table[v] + 1
+		}
+		table[v] = i
+		maxLen = max(maxLen, i-start+1)
+	}
+	return maxLen
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }

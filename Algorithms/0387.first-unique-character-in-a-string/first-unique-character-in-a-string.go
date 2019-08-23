@@ -1,8 +1,12 @@
 package problem0387
 
+import "fmt"
+
 func firstUniqChar(s string) int {
 	rec := make([]int, 26)
 	for _, b := range s {
+		i := b - 'a'
+		fmt.Println(i)
 		rec[b-'a']++
 	}
 

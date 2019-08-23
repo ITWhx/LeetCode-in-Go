@@ -29,7 +29,7 @@ func Test_reverseBits(t *testing.T) {
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
-		ast.Equal(tc.ans, reverseBits(tc.num), "输入:%v", tc)
+		ast.Equal(tc.ans, reverseBits2(tc.num), "输入:%v", tc)
 	}
 }
 

@@ -33,7 +33,7 @@ func searchRange(nums []int, target int) []int {
 
 // 二分查找法
 func search(nums []int, target int) int {
-	low, high := 0, len(nums)-1
+	low, high := 0, len(nums)
 	var median int
 
 	for low <= high {
@@ -48,5 +48,42 @@ func search(nums []int, target int) int {
 			return median
 		}
 	}
+	return
+}
+
+func BSort(nums []int, a int) int {
+	l, r := 0, len(nums)-1
+
+	for l <= r {
+		mid := (l + r) / 2
+
+		switch {
+		case nums[mid] > a:
+			r = mid - 1
+		case nums[mid] < a:
+			l = mid + 1
+		default:
+			return mid
+		}
+	}
+
+	return -1
+}
+func BSort1(nums []int, a int) int {
+	l, r := 0, len(nums)
+
+	for l <= r {
+		mid := (l + r) / 2
+
+		switch {
+		case nums[mid] > a:
+			r = mid - 1
+		case nums[mid] < a:
+			l = mid + 1
+		default:
+			return mid
+		}
+	}
+
 	return -1
 }

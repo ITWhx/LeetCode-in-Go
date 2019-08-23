@@ -31,3 +31,26 @@ func min(i, j int) int {
 	}
 	return j
 }
+
+func maxArea1(height []int) int {
+
+	max, l, r := 0, 0, len(height)-1
+	tmp := 0
+	for l < r {
+
+		if height[l] < height[r] {
+			tmp = height[l] * (r - l)
+			l++
+		} else {
+			tmp = height[r] * (r - l)
+			r--
+		}
+
+		if tmp > max {
+			max = tmp
+		}
+
+	}
+
+	return max
+}

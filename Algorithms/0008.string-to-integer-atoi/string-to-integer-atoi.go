@@ -40,7 +40,9 @@ func convert(sign int, absStr string) int {
 	abs := 0
 
 	for _, b := range absStr {
+
 		abs = abs*10 + int(b-'0')
+
 		// 检查溢出
 		switch {
 		case sign == 1 && abs > math.MaxInt32:
