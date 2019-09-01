@@ -9,6 +9,7 @@ type ListNode struct {
 func deleteDuplicates(head *ListNode) *ListNode {
 	// 长度 <=1 的 list ，可以直接返回
 	if head == nil || head.Next == nil {
+
 		return head
 	}
 

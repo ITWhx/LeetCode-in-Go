@@ -26,3 +26,45 @@ func numTrees(n int) int {
 
 	return res
 }
+
+//递归解法
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
+func generateTrees(n int) []*TreeNode {
+
+	if n == 0 {
+		return []*TreeNode{}
+	}
+
+	return getAns(1, n)
+}
+
+func getAns(start, end int) []*TreeNode {
+
+	var res []*TreeNode
+	if start > end {
+		return append(res, nil)
+	}
+
+	if start == end {
+		return append(res, &TreeNode{Val: start})
+	}
+
+	for i := start; i < end+1; i++ {
+		left := getAns(start, i-1)
+		right := getAns(i+1, end)
+		for _, v := range left {
+			for _, v2 := range right {
+				r := &TreeNode{Val: i}
+				r.Left, r.Right = v, v2
+				res = append(res, r)
+			}
+		}
+	}
+
+	return res
+}
