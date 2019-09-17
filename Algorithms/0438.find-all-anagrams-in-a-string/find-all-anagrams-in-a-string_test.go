@@ -45,9 +45,10 @@ func Test_findAnagrams(t *testing.T) {
 }
 
 func Benchmark_findAnagrams(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		for _, tc := range tcs {
-			findAnagrams(tc.s, tc.p)
-		}
-	}
+
+	//for i := 0; i < b.N; i++ {
+	//	for _, tc := range tcs {
+	//		findAnagrams(tc.s, tc.p)
+	//	}
+	//}
 }
