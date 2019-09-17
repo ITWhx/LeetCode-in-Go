@@ -8,6 +8,7 @@ func subsets(nums []int) [][]int {
 	res := make([][]int, 0, resSize(nums))
 	rec(nums, []int{}, &res)
 	return res
+
 }
 
 func resSize(nums []int) int {
@@ -30,4 +31,24 @@ func rec(nums, temp []int, res *[][]int) {
 	withLast[0] = last
 	withLast = append(withLast, temp...)
 	rec(nums, withLast, res)
+}
+
+//位移法
+func subsets2(nums []int) [][]int {
+	res := [][]int{}
+	num := 1 << uint32(len(nums)) //执行 2 的 n 次方
+	for i := 0; i < num; i++ {
+		tmp := []int{}
+		idx := 0 //记录当前对应数组的哪一位
+		iCopy := i
+		for iCopy != 0 {
+			if iCopy&1 == 1 { //判断当前位是否是 1
+				tmp = append(tmp, nums[idx])
+			}
+			idx++
+			iCopy >>= 1 //右移一位
+		}
+		res = append(res, tmp)
+	}
+	return res
 }
