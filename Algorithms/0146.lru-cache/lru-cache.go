@@ -68,6 +68,7 @@ func (c *LRUCache) Put(key int, value int) {
 				value: value,
 			},
 		}
+
 		// push the new list node into the list
 		ptr := c.l.PushFront(node)
 		// save the node pointer in the hash map
