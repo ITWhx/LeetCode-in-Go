@@ -15,7 +15,7 @@ var tcs = []struct {
 	ans  bool
 }{
 
-	{[]int{1, 2, 3, 2, 1}, true},
+	{[]int{1, 2, 2, 1}, true},
 	{[]int{1, 3, 2, 1}, false},
 
 	// 可以有多个 testcase
