@@ -35,3 +35,20 @@ func recur(root *TreeNode) *TreeNode {
 
 	return res
 }
+
+func flatten2(root *TreeNode) {
+	for root != nil {
+		if root.Left == nil {
+			root = root.Right
+		} else {
+			last := root.Left
+			for last.Right != nil {
+				last = last.Right
+			}
+			last.Right = root.Right
+			root.Right = root.Left
+			root.Left = nil
+			root = root.Right
+		}
+	}
+}
