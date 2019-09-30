@@ -21,9 +21,14 @@ type Pair struct {
 	key   int
 	value int
 }
+type First struct {
+	Value interface{}
+	Cnt   int
+}
 
 // Constructor initializes a new LRUCache.
 func Constructor(capacity int) LRUCache {
+
 	return LRUCache{
 		cap: capacity,
 		l:   new(list.List),
@@ -68,7 +73,6 @@ func (c *LRUCache) Put(key int, value int) {
 				value: value,
 			},
 		}
-
 		// push the new list node into the list
 		ptr := c.l.PushFront(node)
 		// save the node pointer in the hash map
