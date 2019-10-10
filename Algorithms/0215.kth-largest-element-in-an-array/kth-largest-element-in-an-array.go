@@ -44,3 +44,36 @@ func (h *highHeap) Pop() interface{} {
 	*h = (*h)[0 : len(*h)-1]
 	return res
 }
+
+func findKthLargest2(nums []int, k int) int {
+	return find(nums, 0, len(nums)-1, k)
+}
+
+func find(nums []int, low, high, k int) int {
+
+	start, end := low, high
+	tmp := nums[low]
+
+	for low < high {
+
+		for low < high && nums[high] <= tmp {
+			high--
+		}
+
+		nums[low] = nums[high]
+
+		for low < high && nums[low] >= tmp {
+			low++
+		}
+		nums[high] = nums[low]
+
+	}
+	if low == k-1 {
+		return tmp
+	}
+	if low > k-1 {
+		return find(nums, start, low-1, k)
+	}
+	return find(nums, low+1, end, k)
+
+}

@@ -78,3 +78,34 @@ func setPartion(s []int, l, r int) {
 		s[mid], s[l] = s[l], s[mid]
 	}
 }
+
+//快速排序：通过一趟排序将待排序记录分割成独立的两部分，其中一部分记录的关键字均比另一部分关键字小，则分别
+//对这两部分继续进行排序，直到整个序列有序。
+func quikSort2(nums []int, low, high int) {
+	for low < high {
+		middle := getMiddle(nums, low, high)
+		//对左子序列进行排序
+		quick_sort(nums, low, middle+1)
+		//对右子序列进行排序
+		quick_sort(nums, middle+1, high)
+	}
+}
+
+func getMiddle(nums []int, low, high int) int {
+	//当前数组的第一个元素作为中轴（基准）
+	tmp := nums[low]
+	for low < high {
+		//这里temp <= nums[high]中等号的情况相当于数组中出现了两个相等的数字，循环比较依然能够继续
+		for low < high && nums[high] >= tmp {
+			high--
+		}
+		//将大于基准值的high
+		nums[low] = nums[high]
+		for low < high && nums[low] <= tmp {
+			low++
+		}
+		nums[high] = nums[low]
+	}
+	nums[low] = tmp
+	return low
+}

@@ -21,7 +21,7 @@ var tcs = []struct {
 	},
 
 	{
-		[]int{3, 2, 1, 5, 6, 4},
+		[]int{3, 2, 1, 5, 6, 4, 3, 5, 23, 6, 2, 4, 6, 5, 2, 4, 6, 1, 3, 43, 6, 2, 4, 6, 3, 1, 8, 6, 3, 4, 5, 23, 767, 52, 3, 4, 5, 23, 1, 352, 34, 5, 12, 354, 6, 56, 4, 2, 3, 4, 7, 54, 4, 23, 4, 6, 745, 6},
 		2,
 		5,
 	},
@@ -50,7 +50,8 @@ func Test_heap(t *testing.T) {
 func Benchmark_findKthLargest(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		for _, tc := range tcs {
-			findKthLargest(tc.nums, tc.k)
+			//findKthLargest(tc.nums, tc.k)
+			findKthLargest2(tc.nums, tc.k)
 		}
 	}
 }
