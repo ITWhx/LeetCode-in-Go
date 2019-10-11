@@ -6,7 +6,10 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func merge(lists []*ListNode) *ListNode {
+func mergeKLists(lists []*ListNode) *ListNode {
+	if len(lists) == 0 {
+		return nil
+	}
 	length := len(lists)
 	half := length / 2
 
@@ -55,71 +58,63 @@ func merge(lists []*ListNode) *ListNode {
 	return mergeKLists([]*ListNode{mergeKLists(lists[half:]), mergeKLists(lists[:half])})
 }
 
-func mergeKLists(lists []*ListNode) *ListNode {
-	if len(lists) == 0 {
-		return nil
-	}
-
-	return merge(lists)
-}
-
-func mergeKLists(lists []*ListNode) *ListNode {
-	if len(lists) == 0 {
-		return nil
-	}
-
-	return merge(lists)
-}
-
-func merge(list []*ListNode) *ListNode {
-	length := len(list)
-	half := length / 2
-
-	if length == 1 {
-		return list[0]
-	}
-
-	if length == 2 {
-		l1, l2 := list[0], list[1]
-		var res, cur *ListNode
-
-		if l1 == nil {
-			return l2
-		}
-
-		if l2 == nil {
-			return l1
-		}
-		if l1.Val < l2.Val {
-			res = l1
-			cur = l1
-			l1 = l1.Next
-		} else {
-			res = l2
-			cur = l2
-			l1 = l2.Next
-		}
-
-		for l1 != nil && l2 != nil {
-
-			if l1.Val > l2.Val {
-				cur.Next = l2
-				l2 = l2.Next
-			} else {
-				cur.Next = l1
-				l1 = l1.Next
-			}
-			cur = cur.Next
-		}
-
-		if l1 != nil {
-			cur.Next = l1
-		}
-		if l2 != nil {
-			cur.Next = l2
-		}
-		return res
-	}
-
-	return mergeKLists([]*ListNode{mergeKLists(list[half:]), mergeKLists(list[:half])})
-}
+//func mergeKLists(lists []*ListNode) *ListNode {
+//	if len(lists) == 0 {
+//		return nil
+//	}
+//
+//	return merge(lists)
+//}
+//
+//func merge(list []*ListNode) *ListNode {
+//	length := len(list)
+//	half := length / 2
+//
+//	if length == 1 {
+//		return list[0]
+//	}
+//
+//	if length == 2 {
+//		l1, l2 := list[0], list[1]
+//		var res, cur *ListNode
+//
+//		if l1 == nil {
+//			return l2
+//		}
+//
+//		if l2 == nil {
+//			return l1
+//		}
+//		if l1.Val < l2.Val {
+//			res = l1
+//			cur = l1
+//			l1 = l1.Next
+//		} else {
+//			res = l2
+//			cur = l2
+//			l1 = l2.Next
+//		}
+//
+//		for l1 != nil && l2 != nil {
+//
+//			if l1.Val > l2.Val {
+//				cur.Next = l2
+//				l2 = l2.Next
+//			} else {
+//				cur.Next = l1
+//				l1 = l1.Next
+//			}
+//			cur = cur.Next
+//		}
+//
+//		if l1 != nil {
+//			cur.Next = l1
+//		}
+//		if l2 != nil {
+//			cur.Next = l2
+//		}
+//		return res
+//	}
+//
+//	return mergeKLists([]*ListNode{mergeKLists(list[half:]), mergeKLists(list[:half])})
+//}

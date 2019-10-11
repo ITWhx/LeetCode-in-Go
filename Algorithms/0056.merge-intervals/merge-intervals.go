@@ -15,7 +15,7 @@ func merge(its []Interval) []Interval {
 		return its
 	}
 
-	sort.Slice(its, func(i int, j int) bool {
+	sort.Slice(its, func(i, j int) bool {
 		return its[i].Start < its[j].Start
 	})
 

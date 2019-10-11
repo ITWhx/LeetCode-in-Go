@@ -22,8 +22,9 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 		if level%2 == 0 {
 			res[level] = append(res[level], root.Val)
 		} else {
-			temp := make([]int ,  len(res[level])+1)
+			temp := make([]int, len(res[level])+1)
 			temp[0] = root.Val
+
 			copy(temp[1:], res[level])
 			res[level] = temp
 		}
@@ -33,5 +34,29 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 
 	dfs(root, 0)
 
+	return res
+}
+
+func zigzagLevelOrder2(root *TreeNode) [][]int {
+
+	res := [][]int{}
+	var dfs func(*TreeNode, int)
+	dfs = func(root *TreeNode, level int) {
+		if level >= len(res) {
+			res = append(res, []int{})
+		}
+		if level%2 == 0 {
+			res[level] = append(res[level], root.Val)
+		} else {
+			tmp := make([]int, len(res[level])+1)
+			tmp[0] = root.Val
+			copy(tmp[1:], res[level])
+			res[level] = tmp
+		}
+		dfs(root.Left, level+1)
+		dfs(root.Right, level+1)
+	}
+
+	dfs(root, 0)
 	return res
 }
