@@ -12,3 +12,18 @@ func twoSum(nums []int, target int) []int {
 
 	return nil
 }
+
+func twoSum2(nums []int, target int) []int {
+
+	for i, j := 0, len(nums)-1; i < j; {
+		switch {
+		case nums[i]+nums[j] > target:
+			j--
+		case nums[i]+nums[j] < target:
+			i++
+		default:
+			return []int{i, j}
+		}
+	}
+	return nil
+}

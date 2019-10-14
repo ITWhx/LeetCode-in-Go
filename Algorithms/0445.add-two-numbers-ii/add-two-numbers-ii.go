@@ -50,3 +50,50 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 	return head
 }
+func addTwoNumbers2(l1 *ListNode, l2 *ListNode) *ListNode {
+	if l1 == nil {
+		return reverse(l2)
+	}
+	if l2 == nil {
+		return reverse(l1)
+	}
+
+	l1, l2 = reverse(l1), reverse(l2)
+
+	sum := 0
+	res := &ListNode{}
+	cur := res
+	for l1 != nil || l2 != nil {
+		if l1 != nil {
+			sum += l1.Val
+			l1 = l1.Next
+		}
+		if l2 != nil {
+			sum += l2.Val
+			l2 = l2.Next
+		}
+		cur.Next = &ListNode{Val: sum % 10}
+		cur = cur.Next
+		sum /= 10
+	}
+
+	if sum > 0 {
+		cur.Next = &ListNode{Val: sum}
+	}
+
+	return reverse(res.Next)
+}
+
+func reverse(head *ListNode) *ListNode {
+	if head == nil {
+		return nil
+	}
+	var pre *ListNode
+	for head != nil {
+		tmp := head.Next
+		head.Next = pre
+		pre = head
+		head = tmp
+	}
+	return pre
+}
