@@ -15,7 +15,7 @@ func multiply(num1 string, num2 string) string {
 	for i := 0; i < len(bsi); i++ {
 		for j := 0; j < len(bsj); j++ {
 			// 每个位上的乘积，可以直接存入 temp 中相应的位置
-			temp[i+j+1] += int(bsi[i]-'0') * int(bsj[j]-'0')
+			temp[i+j+1] += int(num1[i]-'0') * int(num2[j]-'0')
 		}
 	}
 

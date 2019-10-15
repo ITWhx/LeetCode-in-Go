@@ -2,9 +2,8 @@ package problem0567
 
 import (
 	"fmt"
-	"testing"
-
 	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 // tcs is testcase slice
@@ -53,11 +52,12 @@ var tcs = []struct {
 }
 
 func Test_fn(t *testing.T) {
+
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-		ast.Equal(tc.ans, checkInclusion(tc.s1, tc.s2), "输入:%v", tc)
+		ast.Equal(tc.ans, checkInclusion2(tc.s1, tc.s2), "输入:%v", tc)
 	}
 }
 
