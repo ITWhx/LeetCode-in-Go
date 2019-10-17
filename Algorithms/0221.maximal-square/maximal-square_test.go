@@ -12,7 +12,14 @@ var tcs = []struct {
 	matrix [][]byte
 	ans    int
 }{
-
+	{
+		[][]byte{
+			[]byte("11111"),
+			[]byte("11111"),
+			[]byte("11111"),
+		},
+		9,
+	},
 	{
 		[][]byte{
 			[]byte("01"),
