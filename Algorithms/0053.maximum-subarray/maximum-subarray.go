@@ -16,3 +16,13 @@ func max(a, b int) int {
 	}
 	return b
 }
+
+func maxSubArray2(nums []int) int {
+	sum, maxsum := 0, nums[0]
+
+	for i := 1; i < len(nums); i++ {
+		sum = max(sum+nums[i], nums[i])
+		maxsum = max(sum, maxsum)
+	}
+	return maxsum
+}

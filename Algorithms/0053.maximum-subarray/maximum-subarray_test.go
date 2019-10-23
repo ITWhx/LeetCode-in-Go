@@ -28,7 +28,7 @@ func Test_Problem0053(t *testing.T) {
 	qs := []question{
 
 		question{
-			para{[]int{-2}},
+			para{[]int{1, 2}},
 			ans{-2},
 		},
 
@@ -44,7 +44,7 @@ func Test_Problem0053(t *testing.T) {
 		a, p := q.ans, q.para
 		fmt.Printf("~~%v~~\n", p)
 		fmt.Print(a)
-		maxSubArray(p.one)
+		maxSubArray2(p.one)
 		//ast.Equal(a.one, maxSubArray(p.one), "输入:%v", p)
 	}
 }

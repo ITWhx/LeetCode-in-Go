@@ -4,7 +4,6 @@ func originalDigits(s string) string {
 	if len(s) == 0 {
 		return ""
 	}
-
 	var counts [10]int
 
 	for i := 0; i < len(s); i++ {
