@@ -11,7 +11,7 @@ import (
 )
 
 func Test(t *testing.T) {
-	ints := []int{3, 5, 2, 5, 7, 32, 4, 4, 1}
+	ints := []int{3, 42, 2, 5, 7, 32, 4, 4, 1}
 	fmt.Println(ints)
 	heapSort(ints)
 	fmt.Println(ints)

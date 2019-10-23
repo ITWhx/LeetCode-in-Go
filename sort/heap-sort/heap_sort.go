@@ -12,7 +12,7 @@ func heapSort(nums []int) {
 		buildHeap(nums, i, len)
 	}
 
-	for j := len; j >= 0; j-- {
+	for j := len; j > 0; j-- {
 		nums[0], nums[j] = nums[j], nums[0]
 		buildHeap(nums, 0, j-1)
 	}
@@ -32,8 +32,8 @@ func buildHeap(nums []int, i, n int) {
 		if j2 := j1 + 1; j2 <= n && nums[j2] > nums[j1] {
 			j = j2
 		}
-		//当前节点大于左右孩子，则退出循环
-		if nums[i] < nums[j] {
+		//当前节点大于左右孩子，则退出循环 这一步上次忘记了！！！！！！！！！！！！！！！！！！
+		if nums[i] > nums[j] {
 			break
 		}
 		//交换
