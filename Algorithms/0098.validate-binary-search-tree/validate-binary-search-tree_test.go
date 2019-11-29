@@ -19,8 +19,8 @@ func Test_Problem0098(t *testing.T) {
 	}{
 
 		{
-			[]int{1, 2, 3},
-			[]int{2, 1, 3},
+			[]int{1, 1},
+			[]int{1, 1},
 			false,
 		},
 
@@ -52,7 +52,8 @@ func Test_Problem0098(t *testing.T) {
 
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
-
+		b := isValidBST(kit.PreIn2Tree(tc.pre, tc.in))
+		fmt.Println(b)
 		ast.Equal(tc.ans, isValidBST(kit.PreIn2Tree(tc.pre, tc.in)), "输入:%v", tc)
 	}
 }

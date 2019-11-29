@@ -1,6 +1,7 @@
 package problem0004
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -21,6 +22,9 @@ type question struct {
 }
 
 func Test_OK(t *testing.T) {
+
+	f := (6 + 4) * 1
+	fmt.Println(f)
 	ast := assert.New(t)
 
 	qs := []question{

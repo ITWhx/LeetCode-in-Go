@@ -17,7 +17,7 @@ func maxProduct(a []int) int {
 		if max < cur {
 			max = cur
 		}
-
+		//注意这里是<=
 		if cur <= 0 {
 			cur = 1
 		}

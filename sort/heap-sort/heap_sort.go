@@ -5,6 +5,7 @@
  */
 package heap_sort
 
+// 时间复杂度 NlogN
 func heapSort(nums []int) {
 	len := len(nums) - 1
 	//构建大顶堆，只需调整一半的节点。len/2-1下标之前的节点才有子节点，
@@ -64,7 +65,6 @@ func buildHeap1(nums []int, i, n int) {
 
 //从m个数中找到最大的n个数
 func findKNums(nums []int, n int) []int {
-
 	target := nums[:n]
 	l := len(target) - 1
 	for i := l/2 - 1; i >= 0; i-- {
