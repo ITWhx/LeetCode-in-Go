@@ -5,7 +5,10 @@
  */
 package leaky_bucket
 
-import "time"
+import (
+	"sync/atomic"
+	"time"
+)
 
 type LeakyBucket struct {
 	cap         int64 // 桶的容量
@@ -17,11 +20,11 @@ type LeakyBucket struct {
 func (l *LeakyBucket) RateLimit() bool {
 	now := time.Now().Unix()
 	// 先执行漏水，计算剩余水量
-	l.water = max(0, l.water-(now-l.refreshTime)*l.rate)
+	l.water = max(0, atomic.AddInt64(&l.water, -1*(now-l.refreshTime)*l.rate))
 	l.refreshTime = now
 	if l.water < l.cap {
 		// 水桶还没满，继续加 1
-		l.water++
+		atomic.AddInt64(&l.water, 1)
 		return true
 	} else {
 		// 水满，拒绝流入
@@ -47,7 +50,7 @@ func (t *TokenBucket) rateLimit() bool {
 	now := time.Now().Unix()
 
 	// 先添加令牌
-	t.Tokens = min(t.Capacity, t.Tokens+(now-t.RefreshTime)*t.Rate)
+	t.Tokens = min(t.Capacity, atomic.AddInt64(&t.Tokens, (now-t.RefreshTime)*t.Rate))
 	t.RefreshTime = now
 
 	if t.Tokens < 1 {
@@ -55,7 +58,7 @@ func (t *TokenBucket) rateLimit() bool {
 		return false
 	} else {
 		// 还有令牌，领取令牌
-		t.Tokens--
+		atomic.AddInt64(&t.Tokens, -1)
 		return true
 	}
 }
