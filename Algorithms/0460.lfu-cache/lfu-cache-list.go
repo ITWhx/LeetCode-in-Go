@@ -44,7 +44,7 @@ func (this *LFUCache1) Get(key int) int {
 		if ok {
 			this.Keym[key] = e2.PushFront(e.Value)
 		} else {
-			l := list.New()
+			l := new(list.List)
 			this.Keym[key] = l.PushFront(e.Value)
 			this.Cntm[e.Value.(*node).Cnt] = l
 		}

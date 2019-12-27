@@ -37,6 +37,10 @@ var tcs = []struct {
 }
 
 func Test_rightSideView(t *testing.T) {
+
+	var test []int
+	i := len(test)
+	fmt.Println(i)
 	ast := assert.New(t)
 
 	for _, tc := range tcs {
