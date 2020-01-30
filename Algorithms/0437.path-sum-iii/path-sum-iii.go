@@ -21,6 +21,7 @@ func pathSum(root *TreeNode, sum int) int {
 
 		sum -= node.Val
 		if sum == 0 {
+
 			cnt++
 		}
 

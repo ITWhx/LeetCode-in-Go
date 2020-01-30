@@ -7,21 +7,18 @@ import (
 type TreeNode = kit.TreeNode
 
 func isSymmetric(root *TreeNode) bool {
-	if root == nil {
-		return true 
-	}
-
-	return recur(root.Left, root.Right)
+	return helper(root, root)
 }
 
-func recur(left, right *TreeNode) bool {
-	if left == nil && right == nil {
-		return true
+func helper(node1, node2 *TreeNode) bool {
+	if node1 == nil {
+		return node2 == nil
 	}
-
-	if left == nil || right == nil {
+	if node2 == nil {
 		return false
 	}
-
-	return left.Val == right.Val && recur(left.Left, right.Right) && recur(left.Right, right.Left)
+	if node1.Val != node2.Val {
+		return false
+	}
+	return helper(node1.Left, node2.Right) && helper(node1.Right, node2.Left)
 }

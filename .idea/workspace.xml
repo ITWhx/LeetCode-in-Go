@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96d8b41c-c1d2-493a-b73c-f9451811ee36" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/demo/struct_can_be_equal/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/struct_can_be_equal/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/tmp/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0004.median-of-two-sorted-arrays/median-of-two-sorted-arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0004.median-of-two-sorted-arrays/median-of-two-sorted-arrays.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0025.reverse-nodes-in-k-group/reverse-nodes-in-k-group.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0025.reverse-nodes-in-k-group/reverse-nodes-in-k-group.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0300.longest-increasing-subsequence/longest-increasing-subsequence.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0300.longest-increasing-subsequence/longest-increasing-subsequence.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0437.path-sum-iii/path-sum-iii.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0437.path-sum-iii/path-sum-iii.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0543.diameter-of-binary-tree/diameter-of-binary-tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0543.diameter-of-binary-tree/diameter-of-binary-tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="Go Application" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/sdk/go1.13.5" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectId" id="1VJu2hN26pChaXNJde4hKePziOo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build LeetCode-in-Go/demo/struct_can_be_equal" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode-in-Go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/demo/struct_can_be_equal/main.go" />
+      <package value="LeetCode-in-Go/demo/struct_can_be_equal" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build LeetCode-in-Go/demo/tmp" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode-in-Go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/demo/tmp/main.go" />
+      <package value="LeetCode-in-Go/demo/tmp" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode-in-Go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo/tmp/main.go" />
+      <package value="LeetCode-in-Go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build LeetCode-in-Go/demo/tmp" />
+        <item itemvalue="Go Build.go build LeetCode-in-Go/demo/struct_can_be_equal" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="268" y="40" key="#GOROOT" timestamp="1576983333055">
+      <screen x="0" y="23" width="1536" height="866" />
+    </state>
+    <state x="268" y="40" key="#GOROOT/0.23.1536.866@0.23.1536.866" timestamp="1576983333055" />
+    <state x="232" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576989964125">
+      <screen x="0" y="23" width="1536" height="866" />
+    </state>
+    <state x="232" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1536.866@0.23.1536.866" timestamp="1576989964125" />
+    <state x="332" y="23" key="CommitChangelistDialog2" timestamp="1577593453619">
+      <screen x="0" y="23" width="1536" height="872" />
+    </state>
+    <state x="332" y="23" key="CommitChangelistDialog2/0.23.1536.872@0.23.1536.872" timestamp="1577593453619" />
+    <state width="1478" height="85" key="GridCell.Tab.0.bottom" timestamp="1578405302833">
+      <screen x="0" y="23" width="1536" height="884" />
+    </state>
+    <state width="1478" height="208" key="GridCell.Tab.0.bottom/0.23.1536.872@0.23.1536.872" timestamp="1577616518925" />
+    <state width="1478" height="85" key="GridCell.Tab.0.bottom/0.23.1536.884@0.23.1536.884" timestamp="1578405302833" />
+    <state width="1478" height="85" key="GridCell.Tab.0.center" timestamp="1578405302832">
+      <screen x="0" y="23" width="1536" height="884" />
+    </state>
+    <state width="1478" height="208" key="GridCell.Tab.0.center/0.23.1536.872@0.23.1536.872" timestamp="1577616518924" />
+    <state width="1478" height="85" key="GridCell.Tab.0.center/0.23.1536.884@0.23.1536.884" timestamp="1578405302832" />
+    <state width="1478" height="85" key="GridCell.Tab.0.left" timestamp="1578405302830">
+      <screen x="0" y="23" width="1536" height="884" />
+    </state>
+    <state width="1478" height="208" key="GridCell.Tab.0.left/0.23.1536.872@0.23.1536.872" timestamp="1577616518923" />
+    <state width="1478" height="85" key="GridCell.Tab.0.left/0.23.1536.884@0.23.1536.884" timestamp="1578405302830" />
+    <state width="1478" height="85" key="GridCell.Tab.0.right" timestamp="1578405302832">
+      <screen x="0" y="23" width="1536" height="884" />
+    </state>
+    <state width="1478" height="208" key="GridCell.Tab.0.right/0.23.1536.872@0.23.1536.872" timestamp="1577616518924" />
+    <state width="1478" height="85" key="GridCell.Tab.0.right/0.23.1536.884@0.23.1536.884" timestamp="1578405302832" />
+    <state x="550" y="122" key="RollbackChangesDialog" timestamp="1577449492054">
+      <screen x="0" y="23" width="1536" height="872" />
+    </state>
+    <state x="550" y="122" key="RollbackChangesDialog/0.23.1536.872@0.23.1536.872" timestamp="1577449492054" />
+    <state x="176" y="23" width="1184" height="890" key="SettingsEditor" timestamp="1579951851205">
+      <screen x="0" y="23" width="1536" height="890" />
+    </state>
+    <state x="176" y="23" key="SettingsEditor/0.23.1536.872@0.23.1536.872" timestamp="1577449800152" />
+    <state x="176" y="23" width="1184" height="890" key="SettingsEditor/0.23.1536.890@0.23.1536.890" timestamp="1579951851205" />
+    <state x="100" y="123" width="1336" height="666" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1577448072429">
+      <screen x="0" y="23" width="1536" height="872" />
+    </state>
+    <state x="100" y="123" width="1336" height="666" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1536.872@0.23.1536.872" timestamp="1577448072429" />
+    <state x="454" y="45" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577593204002">
+      <screen x="0" y="23" width="1536" height="872" />
+    </state>
+    <state x="454" y="45" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1536.872@0.23.1536.872" timestamp="1577593204002" />
+    <state x="559" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577592802058">
+      <screen x="0" y="23" width="1536" height="872" />
+    </state>
+    <state x="559" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1536.866@0.23.1536.866" timestamp="1576983382458" />
+    <state x="559" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1536.872@0.23.1536.872" timestamp="1577592802058" />
+    <state x="0" y="23" width="871" height="872" key="find.popup" timestamp="1577616026319">
+      <screen x="0" y="23" width="1536" height="872" />
+    </state>
+    <state x="0" y="23" width="871" height="872" key="find.popup/0.23.1536.872@0.23.1536.872" timestamp="1577616026319" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Algorithms/0538.convert-bst-to-greater-tree/convert-bst-to-greater-tree.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

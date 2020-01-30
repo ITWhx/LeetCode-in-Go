@@ -2,7 +2,6 @@ package problem0543
 
 import (
 	"github.com/aQuaYi/LeetCode-in-Go/kit"
-	"math"
 )
 
 type TreeNode = kit.TreeNode
