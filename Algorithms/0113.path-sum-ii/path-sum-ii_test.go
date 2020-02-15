@@ -58,6 +58,6 @@ func Test_Problem0113(t *testing.T) {
 	for _, tc := range tcs {
 		fmt.Printf("~~%v~~\n", tc)
 
-		ast.Equal(tc.ans, pathSum(kit.PreIn2Tree(tc.pre, tc.in), tc.sum), "输入:%v", tc)
+		ast.Equal(tc.ans, pathSum2(kit.PreIn2Tree(tc.pre, tc.in), tc.sum), "输入:%v", tc)
 	}
 }

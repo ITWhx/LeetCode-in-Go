@@ -2,15 +2,152 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96d8b41c-c1d2-493a-b73c-f9451811ee36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/struct_can_be_equal/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/struct_can_be_equal/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/tmp/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/0004.median-of-two-sorted-arrays/median-of-two-sorted-arrays.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0004.median-of-two-sorted-arrays/median-of-two-sorted-arrays.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/0025.reverse-nodes-in-k-group/reverse-nodes-in-k-group.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0025.reverse-nodes-in-k-group/reverse-nodes-in-k-group.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/0300.longest-increasing-subsequence/longest-increasing-subsequence.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0300.longest-increasing-subsequence/longest-increasing-subsequence.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/0437.path-sum-iii/path-sum-iii.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0437.path-sum-iii/path-sum-iii.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/0543.diameter-of-binary-tree/diameter-of-binary-tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0543.diameter-of-binary-tree/diameter-of-binary-tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/003-二维数组中的查找/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/003-二维数组中的查找/problem003.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/003-二维数组中的查找/problem003_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/004-替换空格/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/004-替换空格/problem004.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/004-替换空格/problem004_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/005-从尾到头打印链表(ing)/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/005-从尾到头打印链表(ing)/problem005.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/006-重建二叉树/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/006-重建二叉树/problem006.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/007-用两个栈实现队列/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/007-用两个栈实现队列/problem007.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/007-用两个栈实现队列/problem007_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/008-旋转数组的最小数字/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/008-旋转数组的最小数字/problem008.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/008-旋转数组的最小数字/problem008_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/009-斐波那契数列/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/009-斐波那契数列/problem009.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/009-斐波那契数列/problem009_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/010-二进制中1的个数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/010-二进制中1的个数/problem010.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/010-二进制中1的个数/problem010_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/011-数值的整数次方/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/011-数值的整数次方/problem011.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/011-数值的整数次方/problem011_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/012-打印1到最大的N位数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/012-打印1到最大的N位数/problem012.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/014-调整数组顺序使奇数位于偶数前面/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/014-调整数组顺序使奇数位于偶数前面/problem014.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/015-链表中倒数第k个结点/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/015-链表中倒数第k个结点/problem015.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/016-反转链表/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/016-反转链表/problem016.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/017-合并两个排序的链表/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/017-合并两个排序的链表/problem017.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/018-树的子结构/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/018-树的子结构/problem018.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/019-二叉树的镜像/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/019-二叉树的镜像/problem019.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/020-顺时针打印矩阵/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/021-包含min函数的栈/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/022-栈的压入弹出序列/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/022-栈的压入弹出序列/problem022.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/023-从上往下打印二叉树/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/023-从上往下打印二叉树/problem023.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/024-二叉搜索树的后序遍历序列/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/024-二叉搜索树的后序遍历序列/problem024.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/025-二叉树中和为某一值的路径/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/026-复杂链表的复制/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/026-复杂链表的复制/problem026.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/027-二叉搜索树与双向链表/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/027-二叉搜索树与双向链表/problem027.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/028-字符串的排列/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/028-字符串的排列/problem028.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/029-数组中出现次数超过一半的数字/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/029-数组中出现次数超过一半的数字/problem029.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/029-数组中出现次数超过一半的数字/problem029_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/030-最小的K个数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/030-最小的K个数/problem030.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/031-连续子数组的最大和/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/031-连续子数组的最大和/problem031.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/032-从1到n整数中1出现的次数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/032-从1到n整数中1出现的次数/problem032.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/033-把数组排成最小的数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/033-把数组排成最小的数/problem033.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/034-丑数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/034-丑数/problem034.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/035-第一个只出现一次的字符位置/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/035-第一个只出现一次的字符位置/problem035.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/036-数组中的逆序对/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/036-数组中的逆序对/problem036.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/037-两个链表的第一个公共结点/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/037-两个链表的第一个公共结点/problem037.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/038-数字在排序数组中出现的次数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/038-数字在排序数组中出现的次数/problem038.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/039-二叉树的深度/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/039-二叉树的深度/problem039.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/039-平衡二叉树[附加]/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/039-平衡二叉树[附加]/problem039.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/040-数组中只出现一次的数字/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/040-数组中只出现一次的数字/problem040.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/041-和为S的两个数字/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/041-和为S的两个数字/problem041.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/041-和为S的连续正数序列/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/041-和为S的连续正数序列/problem041.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/042-左旋转字符串/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/042-左旋转字符串/problem042.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/042-翻转单词顺序列/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/042-翻转单词顺序列/problem042.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/044-扑克牌顺子/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/044-扑克牌顺子/problem044.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/045-孩子们的游戏(圆圈中最后剩下的数)/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/045-孩子们的游戏(圆圈中最后剩下的数)/problem045.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/046-求1+2+3+...+n/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/047-不用加减乘除做加法/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/047-不用加减乘除做加法/problem047.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/048-不能被继承的类/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/049-把字符串转换成整数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/049-把字符串转换成整数/problem049.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/051-数组中重复的数字/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/051-数组中重复的数字/problem051.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/052-构建乘积数组/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/052-构建乘积数组/problem052.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/053-正则表达式匹配/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/053-正则表达式匹配/problem053.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/054-表示数值的字符串/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/054-表示数值的字符串/problem054.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/055-字符流中第一个不重复的字符/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/055-字符流中第一个不重复的字符/problem055.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/056-链表中环的入口结点/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/056-链表中环的入口结点/problem056.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/057-删除链表中重复的结点/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/057-删除链表中重复的结点/problem057.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/058-二叉树的下一个结点/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/058-二叉树的下一个结点/problem058.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/059-对称的二叉树/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/059-对称的二叉树/problem059.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/060-把二叉树打印成多行/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/060-把二叉树打印成多行/problem060.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/061-按之字形顺序打印二叉树/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/061-按之字形顺序打印二叉树/problem061.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/062-序列化二叉树/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/062-序列化二叉树/problem062.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/063-二叉搜索树的第K个结点/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/063-二叉搜索树的第K个结点/problem063.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/064-数据流之中的中位数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/064-数据流之中的中位数/problem064.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/065-滑动窗口的最大值/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/065-滑动窗口的最大值/problem065.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/utils/maxHeap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/utils/maxHeap_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/utils/minHeap.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/utils/minHeap_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/utils/stack.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Coding-Interviews-Golang-master/utils/stack_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0003.longest-substring-without-repeating-characters/longest-substring-without-repeating-characters.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0003.longest-substring-without-repeating-characters/longest-substring-without-repeating-characters.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0113.path-sum-ii/path-sum-ii.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0113.path-sum-ii/path-sum-ii.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0113.path-sum-ii/path-sum-ii_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0113.path-sum-ii/path-sum-ii_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0208.implement-trie-prefix-tree/implement-trie-prefix-tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0208.implement-trie-prefix-tree/implement-trie-prefix-tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/0215.kth-largest-element-in-an-array/kth-largest-element-in-an-array.go" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/0215.kth-largest-element-in-an-array/kth-largest-element-in-an-array.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/heap-sort/heap_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sort/heap-sort/heap_sort.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/quick-sort/quick_sort.go" beforeDir="false" afterPath="$PROJECT_DIR$/sort/quick-sort/quick_sort.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +178,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go Application" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -50,9 +189,19 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build LeetCode-in-Go/Coding-Interviews-Golang-master/051-数组中重复的数字">
+    <configuration name="go build LeetCode-in-Go/Coding-Interviews-Golang-master/051-数组中重复的数字" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode-in-Go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/Coding-Interviews-Golang-master/051-数组中重复的数字/problem051.go" />
+      <package value="LeetCode-in-Go/Coding-Interviews-Golang-master/051-数组中重复的数字" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build LeetCode-in-Go/demo/struct_can_be_equal" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="LeetCode-in-Go" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -80,8 +229,21 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_Problem0113 in LeetCode-in-Go/Algorithms/0113.path-sum-ii" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="LeetCode-in-Go" />
+      <working_directory value="$PROJECT_DIR$/Algorithms/0113.path-sum-ii" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="LeetCode-in-Go/Algorithms/0113.path-sum-ii" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test_Problem0113$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build LeetCode-in-Go/Coding-Interviews-Golang-master/051-数组中重复的数字" />
+        <item itemvalue="Go Test.Test_Problem0113 in LeetCode-in-Go/Algorithms/0113.path-sum-ii" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build LeetCode-in-Go/demo/tmp" />
         <item itemvalue="Go Build.go build LeetCode-in-Go/demo/struct_can_be_equal" />
@@ -103,6 +265,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="268" y="40" key="#GOROOT" timestamp="1576983333055">
       <screen x="0" y="23" width="1536" height="866" />
@@ -112,30 +279,59 @@
       <screen x="0" y="23" width="1536" height="866" />
     </state>
     <state x="232" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1536.866@0.23.1536.866" timestamp="1576989964125" />
-    <state x="332" y="23" key="CommitChangelistDialog2" timestamp="1577593453619">
-      <screen x="0" y="23" width="1536" height="872" />
+    <state x="479" y="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580702819498">
+      <screen x="0" y="23" width="1536" height="890" />
+    </state>
+    <state x="479" y="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1536.890@0.23.1536.890" timestamp="1580702819498" />
+    <state x="332" y="23" key="CommitChangelistDialog2" timestamp="1581766838456">
+      <screen x="0" y="23" width="1536" height="890" />
     </state>
     <state x="332" y="23" key="CommitChangelistDialog2/0.23.1536.872@0.23.1536.872" timestamp="1577593453619" />
-    <state width="1478" height="85" key="GridCell.Tab.0.bottom" timestamp="1578405302833">
-      <screen x="0" y="23" width="1536" height="884" />
+    <state x="332" y="23" key="CommitChangelistDialog2/0.23.1536.890@0.23.1536.890" timestamp="1581766838456" />
+    <state width="438" height="575" key="DebuggerActiveHint" timestamp="1580875259283">
+      <screen x="0" y="23" width="1536" height="890" />
+    </state>
+    <state width="438" height="575" key="DebuggerActiveHint/0.23.1536.890@0.23.1536.890" timestamp="1580875259283" />
+    <state width="1478" height="85" key="GridCell.Tab.0.bottom" timestamp="1581766838539">
+      <screen x="0" y="23" width="1536" height="890" />
     </state>
     <state width="1478" height="208" key="GridCell.Tab.0.bottom/0.23.1536.872@0.23.1536.872" timestamp="1577616518925" />
     <state width="1478" height="85" key="GridCell.Tab.0.bottom/0.23.1536.884@0.23.1536.884" timestamp="1578405302833" />
-    <state width="1478" height="85" key="GridCell.Tab.0.center" timestamp="1578405302832">
-      <screen x="0" y="23" width="1536" height="884" />
+    <state width="1478" height="85" key="GridCell.Tab.0.bottom/0.23.1536.890@0.23.1536.890" timestamp="1581766838539" />
+    <state width="1478" height="85" key="GridCell.Tab.0.center" timestamp="1581766838538">
+      <screen x="0" y="23" width="1536" height="890" />
     </state>
     <state width="1478" height="208" key="GridCell.Tab.0.center/0.23.1536.872@0.23.1536.872" timestamp="1577616518924" />
     <state width="1478" height="85" key="GridCell.Tab.0.center/0.23.1536.884@0.23.1536.884" timestamp="1578405302832" />
-    <state width="1478" height="85" key="GridCell.Tab.0.left" timestamp="1578405302830">
-      <screen x="0" y="23" width="1536" height="884" />
+    <state width="1478" height="85" key="GridCell.Tab.0.center/0.23.1536.890@0.23.1536.890" timestamp="1581766838538" />
+    <state width="1478" height="85" key="GridCell.Tab.0.left" timestamp="1581766838537">
+      <screen x="0" y="23" width="1536" height="890" />
     </state>
     <state width="1478" height="208" key="GridCell.Tab.0.left/0.23.1536.872@0.23.1536.872" timestamp="1577616518923" />
     <state width="1478" height="85" key="GridCell.Tab.0.left/0.23.1536.884@0.23.1536.884" timestamp="1578405302830" />
-    <state width="1478" height="85" key="GridCell.Tab.0.right" timestamp="1578405302832">
-      <screen x="0" y="23" width="1536" height="884" />
+    <state width="1478" height="85" key="GridCell.Tab.0.left/0.23.1536.890@0.23.1536.890" timestamp="1581766838537" />
+    <state width="1478" height="85" key="GridCell.Tab.0.right" timestamp="1581766838538">
+      <screen x="0" y="23" width="1536" height="890" />
     </state>
     <state width="1478" height="208" key="GridCell.Tab.0.right/0.23.1536.872@0.23.1536.872" timestamp="1577616518924" />
     <state width="1478" height="85" key="GridCell.Tab.0.right/0.23.1536.884@0.23.1536.884" timestamp="1578405302832" />
+    <state width="1478" height="85" key="GridCell.Tab.0.right/0.23.1536.890@0.23.1536.890" timestamp="1581766838538" />
+    <state width="1478" height="110" key="GridCell.Tab.1.bottom" timestamp="1580903209444">
+      <screen x="0" y="23" width="1536" height="890" />
+    </state>
+    <state width="1478" height="110" key="GridCell.Tab.1.bottom/0.23.1536.890@0.23.1536.890" timestamp="1580903209444" />
+    <state width="1478" height="110" key="GridCell.Tab.1.center" timestamp="1580903209443">
+      <screen x="0" y="23" width="1536" height="890" />
+    </state>
+    <state width="1478" height="110" key="GridCell.Tab.1.center/0.23.1536.890@0.23.1536.890" timestamp="1580903209443" />
+    <state width="1478" height="110" key="GridCell.Tab.1.left" timestamp="1580903209443">
+      <screen x="0" y="23" width="1536" height="890" />
+    </state>
+    <state width="1478" height="110" key="GridCell.Tab.1.left/0.23.1536.890@0.23.1536.890" timestamp="1580903209443" />
+    <state width="1478" height="110" key="GridCell.Tab.1.right" timestamp="1580903209444">
+      <screen x="0" y="23" width="1536" height="890" />
+    </state>
+    <state width="1478" height="110" key="GridCell.Tab.1.right/0.23.1536.890@0.23.1536.890" timestamp="1580903209444" />
     <state x="550" y="122" key="RollbackChangesDialog" timestamp="1577449492054">
       <screen x="0" y="23" width="1536" height="872" />
     </state>
@@ -145,6 +341,10 @@
     </state>
     <state x="176" y="23" key="SettingsEditor/0.23.1536.872@0.23.1536.872" timestamp="1577449800152" />
     <state x="176" y="23" width="1184" height="890" key="SettingsEditor/0.23.1536.890@0.23.1536.890" timestamp="1579951851205" />
+    <state x="268" y="145" key="Vcs.Push.Dialog.v2" timestamp="1580362891798">
+      <screen x="0" y="23" width="1536" height="890" />
+    </state>
+    <state x="268" y="145" key="Vcs.Push.Dialog.v2/0.23.1536.890@0.23.1536.890" timestamp="1580362891798" />
     <state x="100" y="123" width="1336" height="666" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1577448072429">
       <screen x="0" y="23" width="1536" height="872" />
     </state>
@@ -171,7 +371,18 @@
           <line>2</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/Algorithms/0113.path-sum-ii/path-sum-ii.go</url>
+          <line>52</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoTestRunConfiguration">
+        <watch expression="*(*&quot;[][]int&quot;)(824634431840)" />
+        <watch expression="*(*&quot;github.com/aQuaYi/LeetCode-in-Go/kit.TreeNode&quot;)(824633779680)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

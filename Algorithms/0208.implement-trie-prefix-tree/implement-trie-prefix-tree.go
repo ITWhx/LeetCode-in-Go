@@ -32,6 +32,7 @@ func (this *Trie) Insert(word string) {
 	}
 
 	node.end++
+
 }
 
 func (this *Trie) Search(word string) bool {

@@ -5,6 +5,9 @@
  */
 package heap_sort
 
+//初始化建堆过程时间：O(n)
+//排序重建堆：O(nlogn)
+//1、循环  n -1 次，每次都是从根节点往下循环查找，所以每一次时间是 logn，总时间：logn(n-1) = nlogn  - logn ；
 // 时间复杂度 NlogN
 func heapSort(nums []int) {
 	len := len(nums) - 1

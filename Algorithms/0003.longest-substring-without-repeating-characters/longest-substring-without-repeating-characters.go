@@ -25,3 +25,25 @@ func lengthOfLongestSubstring(s string) int {
 
 	return maxLen
 }
+
+func lengthOfLongestSubstring2(s string) int {
+	start, maxlen := 0, 0
+	m := make(map[byte]int)
+	for i := 0; i < len(s); i++ {
+		if idx, ok := m[s[i]]; ok {
+			//注意这里的判断条件！！！idx>=start   idx表示出现重复字符，如果重复字符在start之前，就没必要更新start了
+			if idx >= start {
+				start = idx + 1
+			}
+		}
+		m[s[i]] = i
+		maxlen = max(maxlen, i-start+1)
+	}
+	return maxlen
+}
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}

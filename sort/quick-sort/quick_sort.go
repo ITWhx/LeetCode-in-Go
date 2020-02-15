@@ -5,8 +5,9 @@
  */
 package quick_sort
 
+//时间复杂度 O（nlogn）
 func quick_sort(s []int, left, right int) {
-	//注意这里时if   不是for！！！！！！！！！！！！！！！！！！！！！！
+	//注意这里是if   不是for！！！！！！！！！！！！！！！！！！！！！！
 	if left < right {
 		par := getPar(s, left, right)
 		quick_sort(s, left, par-1)
@@ -80,14 +81,14 @@ func setPartion(s []int, l, r int) {
 	}
 }
 
-//                        这时没有优化的版本！！！！！！！！！！！！！！
+//                        这是没有优化的版本！！！！！！！！！！！！！！
 //快速排序：通过一趟排序将待排序记录分割成独立的两部分，其中一部分记录的关键字均比另一部分关键字小，则分别
 //对这两部分继续进行排序，直到整个序列有序。
 func quikSort2(nums []int, low, high int) {
-	for low < high {
+	if low < high {
 		middle := getMiddle(nums, low, high)
 		//对左子序列进行排序
-		quikSort2(nums, low, middle+1)
+		quikSort2(nums, low, middle-1)
 		//对右子序列进行排序
 		quikSort2(nums, middle+1, high)
 	}

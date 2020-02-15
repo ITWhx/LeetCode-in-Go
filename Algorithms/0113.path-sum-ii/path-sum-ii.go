@@ -41,3 +41,27 @@ func pathSum(root *TreeNode, sum int) [][]int {
 
 	return res
 }
+
+//这种写法是错的，当加入4结点时，slice刚好扩容，递归调用5，1结点时传入的slice都是len=3，cap=4，5结点满足条件
+//加入到res，1结点在append时，会改变5结点的slice
+func pathSum2(root *TreeNode, sum int) [][]int {
+	var res [][]int
+
+	var dfs func(*TreeNode, []int, int)
+	dfs = func(node *TreeNode, tmp []int, sum int) {
+		if node == nil {
+			return
+		}
+		tmp = append(tmp, node.Val)
+		sum -= node.Val
+		if node.Left == nil && node.Right == nil && sum == 0 {
+			res = append(res, tmp)
+			return
+		}
+		dfs(node.Left, tmp, sum)
+		dfs(node.Right, tmp, sum)
+	}
+
+	dfs(root, []int{}, sum)
+	return res
+}
